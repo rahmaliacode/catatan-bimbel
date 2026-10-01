@@ -21,3 +21,7 @@ GitHub Pages dipublikasikan otomatis dari branch `main` melalui GitHub Actions. 
 Menu Atur checklist menyimpan template khusus per akun. Checklist setiap laporan adalah snapshot; perubahan template tidak mengubah riwayat. Rekap bulanan menyediakan filter bulan/siswa, unduhan PDF dan pesan WhatsApp. PDF dilampirkan pengguna di WhatsApp.
 
 Pendaftaran langsung melalui Supabase Edge Function register (tidak mengirim email verifikasi); login tetap menggunakan Supabase Auth. Endpoint pendaftaran hanya menerima public API key aplikasi, membatasi percobaan per IP per jam dan tidak memperbarui akun lama. Service role hanya di Edge Function.
+
+
+## Jadwal satu guru
+Jadwal rutin mingguan per siswa dan mata pelajaran, daftar sesi berdasarkan tanggal WIB, peringatan bentrok, dan laporan langsung dari sesi. Satu laporan per jadwal per tanggal. Jadwal dapat dinonaktifkan; menghapus jadwal tetap mempertahankan laporan. Schema tambahan: supabase/schedules.sql.
