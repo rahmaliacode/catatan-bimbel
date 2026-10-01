@@ -25,3 +25,9 @@ Pendaftaran langsung melalui Supabase Edge Function register (tidak mengirim ema
 
 ## Jadwal satu guru
 Jadwal rutin mingguan per siswa dan mata pelajaran, daftar sesi berdasarkan tanggal WIB, peringatan bentrok, dan laporan langsung dari sesi. Satu laporan per jadwal per tanggal. Jadwal dapat dinonaktifkan; menghapus jadwal tetap mempertahankan laporan. Schema tambahan: supabase/schedules.sql.
+
+
+## Master mata pelajaran
+Master per akun dengan nama unik tanpa membedakan kapital dan spasi, status aktif/nonaktif, pilihan master pada jadwal dan laporan, dan tambah langsung dari form. Riwayat laporan mempertahankan nama saat dibuat. Schema tambahan: supabase/subjects.sql mengimpor mata pelajaran dari data sebelumnya.
+
+Checklist mengikuti urutan: template siswa+pelajaran, template pelajaran, checklist umum. Gunakan Atur checklist untuk memilih lingkup, mengubah item, menyimpan override atau kembali ke bawaan. Schema: supabase/checklist-templates.sql.
